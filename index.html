@@ -1,5 +1,6 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -8,15 +9,27 @@
     <link rel="stylesheet" href="css/style.css">
     <title>Super Mario</title>
 </head>
+
 <body>
-    <div class="game-board">
-        <img src="imagens/clouds.png" class="clouds">
-        <img src="imagens/clouds.png" class="clouds-2">
-        <img src="imagens/clouds.png" class="clouds-3">
-        <img src="imagens/mario.gif" class="mario">
-        <img src="imagens/pipe.png" class="pipe">
+    <div class="console">
+        <div class="game-board">
+            <h1 class="score">score:</h1>
+            <span><img src="imagens/clouds.png" class="clouds"></span>
+            <span><img src="imagens/clouds.png" class="clouds_"></span>
+            <span><img src="imagens/clouds.png" class="clouds__"></span>
+            <img src="imagens/mario.gif" class="mario">
+            <img src="imagens/pipe.png" class="pipe">
+        </div>
+        <div class="console_style"></div>
     </div>
-    <h1 class="score">score</h1>
+    
+    <div class="end_game_message">
+        <span class="pontuacao"></span>
+        <h1 class="titulo">Game Over</h1>
+        <button id="new_game">Restart</button>
+    </div>
+    </div>
 </body>
 <script src="js/script.js"></script>
+
 </html>
